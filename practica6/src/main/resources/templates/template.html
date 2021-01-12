@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anuncio</title>
+</head>
+<body>
+<button><a href="/tmp/crearAnuncio">Crear anuncio</a></button>
+<p>LLevas {{nAnc}} anuncios</p>
+{{#anuncios}}
+<div>
+    <a href="/tmp/anuncio/{{-index}}">{{autor}} - {{titulo}}</a>
+</div>
+{{/anuncios}}
+</body>
+</html>
